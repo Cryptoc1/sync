@@ -1,0 +1,30 @@
+{
+  "name": "sync",
+  "version": "1.0.0",
+  "description": "Sync to directories",
+  "main": "dist/sync.js",
+  "bin": {
+    "sync": "./bin/sync.js"
+  },
+  "scripts": {
+    "build": "node node_modules/webpack/bin/webpack.js --colors --progress",
+    "webpack": "node node_modules/webpack/bin/webpack.js --colors --progress"
+  },
+  "author": "Samuel Steele <@cryptoc1>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-preset-minify": "^0.2.0",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "archiver": "^2.0.3",
+    "globby": "^6.1.0",
+    "ncp": "^2.0.0",
+    "optimist": "^0.6.1",
+    "readline": "^1.3.0"
+  }
+}
